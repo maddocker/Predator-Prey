@@ -1,0 +1,110 @@
+Idea
+	This idea came to me when I envisioned creating a simple AI "ranch" of 
+sorts, where you could watch ASCII characters that represent animals. These 
+representations would have motives, such as eating, mating, and basic survival
+and the goal of the simulation would be to keep it going as long as possible
+with balance between predator and prey. It would include status bars for 
+indicating hunger, total health, thirst, maybe some others for randomly-generated 
+stats such as speed, attack power, fertility. One day I sat down and randomly had 
+a lot more specific ideas on what I would like this to be like. I thought about 
+the disappointment that EA's Spore had given me (it was a good game, but nothing near 
+the hype train that it had gotten and was a little too playful). Another inspiring 
+project is Rust, a game made by a relatively small developer who had no idea how 
+popular its game would turn out to be (in early release even!). The idea of an open- 
+ended game with a focus on the player's environment and freedom of interactivity 
+is just about the closest thing you can get to being a perfect game. So the idea of 
+this project was born. Essentially, I would like to combine ideas from both mentioned 
+games, but hopefully it can flesh out to truly be its own experience. This is a game that 
+I would like to see released purely for my own enjoyment along with my friends, meaning 
+that I would rather it be a flop commercially but a masterpiece in my eyes.
+
+Meta
+	-OpenGL implementation
+	-Support for Linux, Windows, possibly Android, Mac/iOS if tester available
+	-Ultimate multi-platform, communication between ALL clients
+	-Use of Blender for at least 3D modeling, either Unity3D or Blender for game engine
+		-Would like to see an in-house game engine be added later; possibility for public release
+	-Game focus on stability of ecosystem, cross between Rust and Spore (what Spore could have been, creature stage)
+	-Possible switching between top-down and first/third-person
+	-Tries to get casual tone, rather than taking itself too seriously (albeit not as playful as Spore; more along lines of Rust)
+	-Evolutionary system for animals, plants (?)
+	-Encyclopedia system when at certain level of player advancement
+	-Possible space exploration
+	-Robot use unlocked around same time as space travel
+		-Would have costs, such as efficiency compared to humans
+		-Can be used for tasks like resource collection, defense, ecology maintenance
+	-Colonization of worlds, assignment of NPC/other player as governors
+	-Mining of resources such as oil, rocket fuel
+	-Space travel very costly, only a few trips allowed per resources on each planet
+	-Nearby planets in player's solar system, randomness will be increased
+		-May or may not have ecosystem, resources
+	-Regeneration of complete solar system at permadeath
+	-Connection of players' solar systems allowed on direct connection, server
+		-Direct connection would allow small friend groups to coexist without grief
+		-Server connection would implement Rust-style behavior, with random encounters
+
+Player
+	-Must balance between its own survival and that of its surroundings
+	-Hidden events that trigger experience/leveling to mimic real human evolution and invention
+		-Hidden to increase realism, not encourage "going through the motions"
+		-Tool creation will be unlocked at semi-random experience
+	-Cost for every action; may face decision between survival and advancement
+	-Possible system of less mating = longer/indefinite lifespan
+		-One mate will spawn at world start, can be killed
+			-Decision to mate or explore at beginning
+			-Will create necessity to maintain family at beginning
+			-Advancement may leave player the option to disregard others
+		-Not mating will have perks for sustaining knowledge
+		-Mating will create continue points in the event of player death
+			-Knowledge penalties for rebirth
+			-Other humans will have own AI, diplomacy system
+			-NPCs will be two/three levels behind player
+			-Genes system, descendants will perform similar actions
+			-NPCs would be less costly than robots, more efficient but may not always follow/appreciate directions
+			-Patriarchy system, large number of NPCs may cause rebellions (opposing faction to player), infighting
+		-Costs of mating
+			-Time that could've been spent exploring/advancing
+			-Effort put in to maintain relationship with mate
+			-Risk of challenge from other humans if populous enough
+			-Descendants may turn non-playable if diplomacy to (opinion of) current player falters
+			-More descendants may mean increased mortality
+		-Genocide option, can kill off NPCs to regain lifespan
+			-NPCs will fight back
+			-
+	-Minimize disappointment upon death
+		-Environment randomized on new start
+		-Differing levels of predators/prey/ecosystem
+			-Levels of ecology could include oxygen, water, spawn rate of trees (wood)
+			-Environment could be heavily wooded or sparse in basic resources, further changing experiences
+		-Player must adapt survival strategy for each world
+			-Play style/methology changes; game itself may be considered different genre
+		-Balancing will not always be the same between worlds
+			-Some worlds will need more player involvement in balancing
+			-Others will be self-sustaining
+
+NPC
+	-(Placeholder, need to move info from Player category)
+	-Opposing factions (if population high enough and faction opinion of player low)
+		-May colonize and move to nearby planets
+		-Will inherit two/three levels beneath player, continue leveling at a slightly lower rate
+		-Diplomacy/victory against faction leadership could allow reintegration into player's faction
+
+Animals
+	-Diplomacy system (friendly/aggressive/neutral) toward player
+		-Individual- and species-generated at start
+		-Can be affected by actions toward animals
+		-Attacking (aggressive) and feeding (friendly) directly affect individual, will affect species if witnessed by others
+		-Can operate on companion/pet system
+	-Evolution, natural selection
+		-Affects ecosystem balancing, may require player involvement
+		-Occurs at random rates, does not follow player advancement timeline
+		-Species can split after a period of separation
+		-Can change distinction of predator/prey
+	-Differing resources on death
+		-Can be affected by evolution; i.e. loss of horns leads to loss of sharp weapon/spear tip for player
+
+Multiplayer
+	-Same diplomacy system from players/NPCs, new option for alliance
+	-Alliance would allow players to utilize others' NPCs, faction opinion is then shared
+		-Negative actions from other player would decrease opinion of original player
+	-In-world action does not occur unless any player is active on world
