@@ -39,7 +39,7 @@ public class TestFrame extends javax.swing.JFrame {
         scenePanel.setBackground(new java.awt.Color(255, 255, 255));
         scenePanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
-        sceneLabel.setText("(scene here)");
+        sceneLabel.setText("(scene here) Hello!");
 
         javax.swing.GroupLayout scenePanelLayout = new javax.swing.GroupLayout(scenePanel);
         scenePanel.setLayout(scenePanelLayout);
