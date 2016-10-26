@@ -17,6 +17,21 @@ public class TestFrame extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void setScene(char[][] inScene) {
+        // HTML formatting necessary for line breaks in JLabel
+	String inWorldView = "<html><body>";
+	for( int row = 0 ; row < inScene.length ; row++ )
+        {
+            for( int column = 0 ; column < inScene[0].length ; column++ )
+            {
+            	inWorldView = inWorldView + inScene[row][column];
+            }
+            inWorldView = inWorldView + "<br>";
+	}
+	inWorldView = inWorldView + "</body></html>";
+	sceneLabel.setText( inWorldView );
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -39,7 +54,7 @@ public class TestFrame extends javax.swing.JFrame {
         scenePanel.setBackground(new java.awt.Color(255, 255, 255));
         scenePanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
-        sceneLabel.setText("(scene here) Hello!");
+        sceneLabel.setText("(scene here)");
 
         javax.swing.GroupLayout scenePanelLayout = new javax.swing.GroupLayout(scenePanel);
         scenePanel.setLayout(scenePanelLayout);

@@ -82,7 +82,7 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="sceneLabel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="(scene here) Hello!"/>
+            <Property name="text" type="java.lang.String" value="(scene here)"/>
           </Properties>
         </Component>
       </SubComponents>
