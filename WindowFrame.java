@@ -41,12 +41,12 @@ public class WindowFrame extends JFrame
 		
 		// Set default window settings
 		setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-		setSize( 400, 200 );
+		setSize( 400, 300 );
 		setVisible( true );
 	}
 
 	// Convert char array to String, display in JLabel
-	public void setWorldView( char[][] inScene )
+	public void setScene( char[][] inScene )
 	{
 		// HTML formatting necessary for line breaks in JLabel
 		String inWorldView = "<html><body>";
