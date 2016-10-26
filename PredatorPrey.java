@@ -7,57 +7,54 @@
 *	turns out; it may never reach true "completion".
 */
 
-import java.util.concurrent.TimeUnit;		// Used to make program wait
-import java.util.ArrayList;			// Yep.
+import java.util.concurrent.TimeUnit;
+import java.util.ArrayList;
 
-public class PredatorPrey
-{
-	public static void main( String args[] )
-	{
+public class PredatorPrey {
+    public static void main(String args[]) {
 
 //-------------------- Initialization (GUI/ArrayList/Creatures) -----
 
-		// Set size of world
-		int ROWS = 10;
-		int COLUMNS = 10;
+    // Set size of world
+    int ROWS = 10;
+    int COLUMNS = 10;
 
-		// Create GUI
-		WindowFrame windowFrame = new WindowFrame();
+    // Create GUI
+    TestFrame testFrame = new TestFrame();
 
-		// Create scene array, populate with "empty" environment
-		char[][] scene = new char[ROWS][COLUMNS];
-		for( int row = 0 ; row < scene.length ; row++ )
-		{
-			for( int column = 0 ;
-				column < scene[0].length ; column++ )
-			{
-				scene[row][column] = '_';
-			}
-		}
+    // Create scene array, populate with "empty" environment
+    char[][] scene = new char[ROWS][COLUMNS];
+    for(int row = 0; row < scene.length; row++)
+    {
+        for(int column = 0; column < scene[0].length; column++)
+        {
+            scene[row][column] = '_';
+        }
+    }
 
-		// Create new ArrayList for Creatures
-		ArrayList<Creature> creatures = new ArrayList<Creature>();
-		creatures.add( new Creature( ROWS, COLUMNS, 'M' ) );
-		creatures.add( new Creature( ROWS, COLUMNS, 'L' ) );
+    // Create new ArrayList for Creatures
+    ArrayList<Creature> creatures = new ArrayList<Creature>();
+    creatures.add(new Creature(ROWS, COLUMNS, 'M'));
+    creatures.add(new Creature(ROWS, COLUMNS, 'L'));
 
-		// Variables for each Creature's position
-		int x;
-		int y;
+    // Variables for each Creature's position
+    int x;
+    int y;
 
-		// Collect position information for Creatures, send to scene
-		for( int i = 0 ; i < creatures.size() ; i++ )
-		{
-			x = creatures.get(i).getX();
-			y = creatures.get(i).getY();
-			scene[y][x] = creatures.get(i).getModel();
-		}
+    // Collect position information for Creatures, send to scene
+    for(int i = 0; i < creatures.size(); i++)
+    {
+        x = creatures.get(i).getX();
+        y = creatures.get(i).getY();
+        scene[y][x] = creatures.get(i).getModel();
+    }
 
-		// Send scene array to GUI
-		windowFrame.setWorldView( scene );
+    // Send scene array to GUI
+    testFrame.setScene(scene);
 
 //-------------------- Movement Logic -------------------------------
 
 //-------------------- Interaction Logic ----------------------------
 
-	}
+    }
 }
